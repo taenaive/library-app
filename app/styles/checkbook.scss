@@ -8,10 +8,28 @@
    font-size: 14px;
    margin: 0px;
  }
+ .mini {
+   p {
+     font-size: 11px;
+   }
+ }
+
  .check-number {
    float: right;
  }
  .dollar {
+  //  h4:before { content: "\00a0 \00a0 \00a0 \00a0 \00a0"; }
    float: left;
+   height: 100%;
+  vertical-align: bottom;
  }
+ .bottom-aligned {
+    height: 100%;
+   display: table-cell;
+
+ }
+}
+.checkbook-print {
+  width: 1000px;
+  display: inline-block;
 }

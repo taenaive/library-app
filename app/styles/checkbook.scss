@@ -1,3 +1,6 @@
+@import 'fontface';
+@include fontFace('micrenc', '/micrenc')
+
 .checkbook {
   margin-bottom: 10px;
 
@@ -32,4 +35,10 @@
 .checkbook-print {
   width: 1000px;
   display: inline-block;
+}
+.checkbook-micr {
+  h4 {
+    font-family: micrenc;
+    font-size: 28px;
+  }
 }

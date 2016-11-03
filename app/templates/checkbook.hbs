@@ -1,7 +1,7 @@
 <!-- <div class="checkbook-print"> -->
-<div class="jumbotron">
+<div class="jumbotron checkbook-jumbo-line">
   <div class="row checkbook">
-    <div class ="col-xs-8">
+    <div class ="col-xs-6">
       <h4>Tae S Yoon</h4>
       <h4>Seon Y Yoon</h4>
       <div class="mini">
@@ -10,14 +10,14 @@
       <p>323-378-9749</p>
       </div>
     </div>
-    <div class ="col-xs-3">
+    <div class ="col-xs-4">
       <br>
       <label class="col-xs-2 col-form-label">Date</label>
       <div class="col-xs-10">
         {{dateOut}}
       </div>
     </div>
-    <div class="check-number">
+    <div class="col-xs-2">
       <h4>{{checkNumberOut}}</h4>
     </div>
   </div>
@@ -27,10 +27,12 @@
       <p>Order of</p>
     </div>
     <div class ="col-xs-7">
-      <input class="form-control" type="text" value="void" id="payee-text-input">
+      <input class="form-control" type="text" value="" id="payee-text-input">
     </div>
     <div class="check-number col-xs-3">
-        <div class="dollar "><h4>$</h4></div><div class="check-number"><input class="form-control" type="number" value=".00" id="example-number-input"></div>
+        <div class="dollar"><h4>$</h4></div><div class="check-number">
+          <input class="form-control" type="number" value=".00" id="example-number-input">
+        </div>
     </div>
   </div>
   <div class="row checkbook">
@@ -41,15 +43,15 @@
       <input class="form-control" type="text" value="" id="payee-text-input">
     </div>
     <div class="check-number col-xs-3">
-        <div class="dollar"><h4>dollars</h4></div>
+        <div class="dolla"><h4>dollars</h4></div>
     </div>
   </div>
-  <div>
-    BANK OF AMERICA
+  <div class="checkbook-logo" >
+    <img src="new-bac-logo.gif" alt="boa logo" height="18" width="152">
   </div>
   <div class="checkbook">
     <div class ="col-xs-8">
-      <p>for</p>
+      <p>For</p>
     </div>
     <div class ="col-xs-4">
       <p>Signature</p>

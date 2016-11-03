@@ -4,33 +4,64 @@
 .checkbook {
   margin-bottom: 10px;
 
-  h3,h4 {
-    margin: 0px;
-  }
- P {
-   font-size: 14px;
-   margin: 0px;
- }
- .mini {
-   p {
-     font-size: 11px;
+    h3,h4 {
+      margin: 0px;
+      font-size: 14px;
+    }
+   P {
+     font-size: 12px;
+     margin: 0px;
    }
- }
+   .mini {
+     p {
+       font-size: 11px;
+     }
+   }
+   .row,& {
+     margin-bottom: 1px;
+   }
+   .check-number {
+     float: right;
+   }
+   .dollar {
+     //h4:before { content: "\00a0 \00a0 \00a0"; }
+     //float: left;
+    //  height: 100%;
+     //display: inline-block;
+     //width: 10px;
+     //text-align: ;
+     width: 100%;
+     position: absolute;
+     bottom: 10px;
+   }
+   .dolla {
+     //h4:before { content: "\00a0 \00a0 \00a0"; }
+     //float: left;
+    //  height: 100%;
+     //display: inline-block;
+     //width: 10px;
+     //text-align: ;
+     top: 7px;
+     right: 10px;
+    //  width: 100%;
+      position: relative;
+    //  bottom: 10px;
+   }
+   .bottom-aligned {
+      height: 100%;
+     display: table-cell;
 
- .check-number {
-   float: right;
- }
- .dollar {
-  //  h4:before { content: "\00a0 \00a0 \00a0 \00a0 \00a0"; }
-   float: left;
-   height: 100%;
-  vertical-align: bottom;
- }
- .bottom-aligned {
-    height: 100%;
-   display: table-cell;
+   }
+   .form-control {
+     font-size: 14px;
+     padding: 1px 1px;
+     text-align: right;
+   }
+   .col-xs-3 {
+     padding: 1px 1px;
+     width: 165px;
+   }
 
- }
 }
 .checkbook-print {
   width: 1000px;
@@ -41,4 +72,13 @@
     font-family: micrenc;
     font-size: 28px;
   }
+
+}
+.checkbook-logo {
+  &:before { content: "\00a0 \00a0 \00a0"; }
+  margin-top: 5px
+}
+.checkbook-jumbo-line {
+  border-style: solid;
+  padding: 10px 10px
 }
